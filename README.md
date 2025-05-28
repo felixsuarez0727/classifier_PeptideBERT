@@ -23,7 +23,7 @@ Proyecto de clasificación de péptidos utilizando el modelo PeptideBERT. Este r
 
      - Edita la ruta en la celda que contiene:
        ```python
-       %cd /content/drive/MyDrive/ELVA/CLASIFICADOR/PeptideBERT/PeptideBERT-master  #edit this path to your PeptideBERT directory
+       %cd /content/drive/MyDrive/...  #edit this path to your PeptideBERT directory
        ```
 
    - **Construcción de conjunto de datos**:
