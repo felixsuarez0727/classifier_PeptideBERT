@@ -2,10 +2,6 @@
 
 Proyecto de clasificación de péptidos utilizando el modelo PeptideBERT. Este repositorio contiene el flujo principal de trabajo basado en el notebook `PeptideBERT-CPP.ipynb`.
 
-<br>
-[Paper asociado](https://arxiv.org/abs/2309.03099)
-<img src="https://github.com/ChakradharG/PeptideBERT/assets/47364794/deba6f6d-8fdc-4262-a288-74b15f0543c4" alt="PeptideBERT" align="right" width="30%">
-
 ## Requisitos previos
 
 1. Instala dependencias desde el subdirectorio PeptideBERT:
