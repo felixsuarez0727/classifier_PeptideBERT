@@ -48,9 +48,9 @@ El modelo utilizado es una adaptación de [ProtBERT] con una cabeza de clasifica
   - `val_accuracy`: 50.0%
   - `val_loss`: 0.5449
 
-- **Evaluación en test**:
+**Evaluación en test**:
 
-  - `Accuracy`: 48.64%
+- `Accuracy`: 48.64%
 
 - **Modelo con datos RFU discretizadas a partir de la mediana**:
 
@@ -58,5 +58,6 @@ El modelo utilizado es una adaptación de [ProtBERT] con una cabeza de clasifica
   - `val_accuracy`: 79.06
   - `val_loss`: 0.34
 
-- **Evaluación en test**:
-  - `Accuracy`: 91.66%
+**Evaluación en test**:
+
+- `Accuracy`: 91.66%
