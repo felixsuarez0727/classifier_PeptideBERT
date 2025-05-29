@@ -44,20 +44,20 @@ El modelo utilizado es una adaptación de [ProtBERT] con una cabeza de clasifica
 
 - **Modelo con datos CPP**:
 
-  - `train_loss`: 0.63495
-  - `val_accuracy`: 50.0%
-  - `val_loss`: 0.5449
+| Métrica         | Valor   |
+| --------------- | ------- |
+| `train_loss`    | 0.63495 |
+| `val_loss`      | 0.5449  |
+| `val_accuracy`  | 50.00%  |
+| `test_accuracy` | 48.64%  |
 
-**Evaluación en test**:
-
-- `Accuracy`: 48.64%
+---
 
 - **Modelo con datos RFU discretizadas a partir de la mediana**:
 
-  - `train_loss`: 0.25
-  - `val_accuracy`: 79.06
-  - `val_loss`: 0.34
-
-**Evaluación en test**:
-
-- `Accuracy`: 91.66%
+| Métrica         | Valor  |
+| --------------- | ------ |
+| `train_loss`    | 0.25   |
+| `val_loss`      | 0.34   |
+| `val_accuracy`  | 79.06% |
+| `test_accuracy` | 91.66% |
