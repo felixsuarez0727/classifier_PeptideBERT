@@ -42,7 +42,7 @@ El modelo utilizado es una adaptación de [ProtBERT] con una cabeza de clasifica
 
 ## Resultados del entrenamiento y test
 
-- **Métricas del modelo con datos CPP**:
+- **Modelo con datos CPP**:
 
   - `train_loss`: 0.63495
   - `val_accuracy`: 50.0%
@@ -52,7 +52,7 @@ El modelo utilizado es una adaptación de [ProtBERT] con una cabeza de clasifica
 
   - `Accuracy`: 48.64%
 
-- **Métricas del modelo con datos RFU discretizadas a partir de la mediana**:
+- **Modelo con datos RFU discretizadas a partir de la mediana**:
 
 - `train_loss`: 0.25
 - `val_accuracy`: 79.06
