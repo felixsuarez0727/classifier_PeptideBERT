@@ -54,9 +54,9 @@ El modelo utilizado es una adaptación de [ProtBERT] con una cabeza de clasifica
 
 - **Modelo con datos RFU discretizadas a partir de la mediana**:
 
-- `train_loss`: 0.25
-- `val_accuracy`: 79.06
-- `val_loss`: 0.34
+  - `train_loss`: 0.25
+  - `val_accuracy`: 79.06
+  - `val_loss`: 0.34
 
 - **Evaluación en test**:
   - `Accuracy`: 91.66%
