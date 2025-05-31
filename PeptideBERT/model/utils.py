@@ -1,6 +1,6 @@
 import torch
 from tqdm import tqdm
-from sklearn.metrics import accuracy_score, recall_score, f1_score, confusion_matrix
+from sklearn.metrics import accuracy_score, recall_score, f1_score, confusion_matrix, precision_score
 
 
 def train(model, dataloader, optimizer, criterion, scheduler, device):
@@ -74,7 +74,8 @@ def test(model, dataloader, device):
 
     accuracy = 100 * accuracy_score(ground_truth, predictions)
     recall = recall_score(ground_truth, predictions)
+    precision = precision_score(ground_truth, predictions)
     f1 = f1_score(ground_truth, predictions)
     cm = confusion_matrix(ground_truth, predictions)
 
-    return accuracy, recall, f1, cm
+    return accuracy, recall, precision,f1, cm
