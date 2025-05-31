@@ -44,31 +44,22 @@ El modelo utilizado es una adaptación de [ProtBERT] con una cabeza de clasifica
 
 - **Modelo con datos CPP**:
 
-| Métrica         | Valor   |
-| --------------- | ------- |
-| `train_loss`    | 0.63495 |
-| `val_loss`      | 0.5449  |
-| `val_accuracy`  | 50.00%  |
-| `test_accuracy` | 48.64%  |
+| Métrica       | Valor   |
+| ------------- | ------- |
+| train_loss    | 0.63495 |
+| val_loss      | 0.5449  |
+| val_accuracy  | 50.00%  |
+| test_accuracy | 48.64%  |
 
 ---
 
-- **Modelo con datos RFU discretizadas a partir de la mediana**:
+- **Modelo con datos RFU discretizadas**:
 
-| Métrica         | Valor  |
-| --------------- | ------ |
-| `train_loss`    | 0.25   |
-| `val_loss`      | 0.34   |
-| `val_accuracy`  | 79.06% |
-| `test_accuracy` | 91.66% |
+**Resultados de clasificación con PeptideBERT sobre el dataset B**
 
----
-
-- **Modelo con datos RFU discretizadas a partir de la media**:
-
-| Métrica         | Valor  |
-| --------------- | ------ |
-| `train_loss`    | 0.29   |
-| `val_loss`      | 0.34   |
-| `val_accuracy`  | 86.04% |
-| `test_accuracy` | 81.25% |
+| Métrica   | **Media (1.54)** | **Mediana (1.64)** |
+|-----------|------------------|--------------------|
+| Exactitud | 0.81             | 0.91               |
+| Precisión | 0.72             | 0.88               |
+| Recall    | 0.90             | 0.95               |
+| F1 Score  | 0.79             | 0.91               |
