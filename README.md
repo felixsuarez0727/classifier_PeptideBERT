@@ -61,3 +61,14 @@ El modelo utilizado es una adaptación de [ProtBERT] con una cabeza de clasifica
 | `val_loss`      | 0.34   |
 | `val_accuracy`  | 79.06% |
 | `test_accuracy` | 91.66% |
+
+---
+
+- **Modelo con datos RFU discretizadas a partir de la media**:
+
+| Métrica         | Valor  |
+| --------------- | ------ |
+| `train_loss`    | 0.29   |
+| `val_loss`      | 0.34   |
+| `val_accuracy`  | 86.04% |
+| `test_accuracy` | 81.25% |
