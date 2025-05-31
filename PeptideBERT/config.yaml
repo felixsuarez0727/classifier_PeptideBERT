@@ -1,7 +1,7 @@
 epochs: 50
 batch_size: 32
 vocab_size: 25
-task: own_data # hemo, sol, nf
+task: own_data_RFU_mean #own_data # hemo, sol, nf
 debug: false
 
 network:
