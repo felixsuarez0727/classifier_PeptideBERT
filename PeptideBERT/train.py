@@ -69,5 +69,9 @@ if not config['debug']:
 train_model()
 if not config['debug']:
     model.load_state_dict(torch.load(f'{save_dir}/model.pt')['model_state_dict'], strict=False)
-test_acc = test(model, test_data_loader, device)
+test_acc, test_recall, test_precision, test_f1, test_cm = test(model, test_data_loader, device)
 print(f'Test Accuracy: {test_acc}%')
+print(f'Test Recall: {test_recall}')
+print(f'Test Precision: {test_precision}')
+print(f'Test F1 Score: {test_f1}')
+print(f'Test Confusion Matrix:\n{test_cm}')
