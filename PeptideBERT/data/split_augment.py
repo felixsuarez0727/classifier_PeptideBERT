@@ -51,6 +51,48 @@ def split_data(task):
     )
 
 
+def split_data_regression(task):
+    with np.load(f'./data/{task}.npz') as data:
+        full_data = data['arr_0']
+
+    input_ids = np.vstack((
+        full_data
+    ))
+
+    labels = np.hstack((
+        np.ones(len(full_data))
+    ))
+  
+
+    train_val_inputs, test_inputs, train_val_labels, test_labels = train_test_split(
+        input_ids, labels, test_size=0.1
+    )
+
+    train_inputs, val_inputs, train_labels, val_labels = train_test_split(
+        train_val_inputs, train_val_labels, test_size=0.1
+    )
+
+    if not os.path.exists(f'./data/{task}'):
+        os.mkdir(f'./data/{task}')
+
+    np.savez(
+        f'./data/{task}/train.npz',
+        inputs=train_inputs,
+        labels=train_labels
+    )
+
+    np.savez(
+        f'./data/{task}/val.npz',
+        inputs=val_inputs,
+        labels=val_labels
+    )
+
+    np.savez(
+        f'./data/{task}/test.npz',
+        inputs=test_inputs,
+        labels=test_labels
+    )
+
 def combine(inputs, labels, new_inputs, new_labels):
     new_inputs = np.vstack(new_inputs)
     new_labels = np.hstack(new_labels)
@@ -215,7 +257,8 @@ def main():
     # split_data('hemo')
     # split_data('sol')
     # split_data('nf')
-    split_data('own_data')
+    #split_data_regression('regression')
+    split_data('own_data_RFU_mean')
 
     # augment_data('sol')
 
